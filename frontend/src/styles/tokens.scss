@@ -1,0 +1,94 @@
+// ============================================================
+// 视觉基准 / Design Tokens（《设计规范》落地）
+// 所有页面与组件的尺寸、颜色、圆角、阴影、字号一律引用这里的
+// 变量；不要散落魔法数字。改视觉基准只改这里。
+// ============================================================
+
+// —— 主色 / 辅助色 ——
+$indigo: #6366f1;          // 主色（靛蓝）
+$indigo-50:  #eef2ff;
+$indigo-100: #e0e7ff;
+$indigo-200: #c7d2fe;
+$indigo-300: #a5b4fc;
+$indigo-400: #818cf8;
+$indigo-500: #6366f1;      // 主色本体
+$indigo-600: #4f46e5;      // 悬停 / 按下
+$indigo-700: #4338ca;
+$avatar-bg: $indigo-500;      // 头像底色（主色）
+
+// 辅助色克制使用：成功 / 警告 / 错误 / 信息
+$success: #10b981;
+$warning: #f59e0b;
+$danger:  #ef4444;
+$info:    #64748b;
+
+// —— 中性色（文字 / 边框 / 背景）——
+$text-primary:   #1e1b4b;  // 主文字（深靛）
+$text-regular:   #3f3f5a;
+$text-secondary: #64748b;
+$text-disabled:  #a7adb8;
+$border:         #e2e8f0;
+$border-light:   #eef2f8;
+$bg-page:        #f6f7fb;   // 页面底色（极简浅灰蓝）
+$bg-card:        #ffffff;
+$white:          #ffffff;
+$bg-hover:       #f5f6fb;
+$bg-table-header: #f8f9fc;  // 表头浅灰
+$bg-login:       #f0f1fb;  // 登录页渐变末端
+$login-card-w:   380px;
+
+// —— 圆角（12px 体系）——
+$radius-sm:  8px;
+$radius:     12px;         // 默认
+$radius-lg:  16px;
+$radius-full: 9999px;
+
+// —— 柔和阴影 ——
+$shadow-sm: 0 1px 2px rgba(30, 27, 75, .06), 0 1px 3px rgba(30, 27, 75, .05);
+$shadow:    0 4px 16px rgba(99, 102, 241, .10), 0 1px 4px rgba(30, 27, 75, .06);
+$shadow-lg: 0 12px 32px rgba(99, 102, 241, .16), 0 4px 12px rgba(30, 27, 75, .08);
+
+// —— 8px 间距体系 ——
+$sp-1: 4px;
+$sp-2: 8px;
+$sp-3: 12px;
+$sp-4: 16px;
+$sp-5: 24px;
+$sp-6: 32px;
+$sp-7: 48px;
+$sp-8: 64px;
+
+// —— 字号（px）——
+$fs-xs: 12px;
+$fs-sm: 13px;
+$fs-md: 14px;   // 默认正文
+$fs-lg: 16px;
+$fs-xl: 18px;
+$fs-2xl: 22px;
+$fs-3xl: 28px;
+
+// —— 行高 / 字重 ——
+$lh-tight: 1.25;
+$lh-base: 1.5;
+$lh-loose: 1.75;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// —— 布局尺寸 ——
+$sidebar-width: 240px;
+$header-height:  60px;
+$avatar-sm:      36px;   // 顶栏头像
+$avatar-lg:      72px;   // 个人中心头像
+$col-narrow:     320px;  // 双栏页左列（权限/角色选择）
+$col-form:       380px;  // 双栏页左列（资料卡/表单最大宽）
+$drawer-w:       420px;  // 表单抽屉宽
+$code-font: 'SFMono-Regular', Consolas, monospace;
+$logo-sm:        32px;   // 侧边栏 logo 盒
+$logo-lg:        56px;   // 登录页 logo 盒
+$icon-base:      18px;   // 菜单图标
+$search-w:       240px;  // 工具栏搜索框
+$method-chip-w:  52px;  // 权限页接口方法标识宽
+$api-list-h:     480px;  // 权限页接口列表最大高
+$chip-pad:       2px;  // 方法标识上下细内边距（视觉校准）

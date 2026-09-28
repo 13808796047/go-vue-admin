@@ -1,0 +1,106 @@
+@use "tokens.scss" as *;
+
+// 用 Element Plus 的 CSS 变量覆盖机制，把设计规范注入 UI 库
+:root {
+  // 主色
+  --el-color-primary: #{$indigo-500};
+  --el-color-primary-light-3: #{$indigo-300};
+  --el-color-primary-light-5: #{$indigo-200};
+  --el-color-primary-light-7: #{$indigo-100};
+  --el-color-primary-light-8: #{$indigo-50};
+  --el-color-primary-light-9: #{$indigo-50};
+  --el-color-primary-dark-2: #{$indigo-600};
+  --el-color-success: #{$success};
+  --el-color-warning: #{$warning};
+  --el-color-danger: #{$danger};
+  --el-color-error: #{$danger};
+  --el-color-info: #{$info};
+
+  // 圆角统一 12px
+  --el-border-radius-base: 12px;
+  --el-border-radius-small: #{$radius-sm};
+
+  // 柔和阴影（主色蓝调）
+  --el-box-shadow: #{$shadow};
+  --el-box-shadow-light: #{$shadow-sm};
+
+  // 文字 / 中性色
+  --el-text-color-primary: #{$text-primary};
+  --el-text-color-regular: #{$text-regular};
+  --el-text-color-secondary: #{$text-secondary};
+  --el-text-color-placeholder: #{$text-disabled};
+  --el-border-color: #{$border};
+  --el-border-color-light: #{$border-light};
+  --el-bg-color: #{$bg-card};
+  --el-bg-color-page: #{$bg-page};
+
+  // 字号
+  --el-font-size-base: #{$fs-md};
+}
+
+// 主按钮：柔和阴影
+.el-button--primary {
+  --el-button-bg-color: #{$indigo-500};
+  --el-button-border-color: #{$indigo-500};
+  --el-button-hover-bg-color: #{$indigo-600};
+  --el-button-hover-border-color: #{$indigo-600};
+  --el-button-active-bg-color: #{$indigo-700};
+  --el-button-active-border-color: #{$indigo-700};
+  box-shadow: $shadow-sm;
+}
+
+.el-button {
+  border-radius: $radius;
+}
+
+// 卡片：12px 圆角 + 柔和阴影，无粗边框
+.el-card {
+  border-radius: $radius;
+  border: none;
+  box-shadow: $shadow;
+}
+
+// 输入框：12px 圆角
+.el-input,
+.el-select,
+.el-textarea {
+  --el-input-border-radius: $radius;
+}
+.el-input__wrapper,
+.el-select .el-input__wrapper,
+.el-textarea__inner {
+  border-radius: $radius;
+}
+
+// 表格：浅表头、无竖线、行 hover 浅底
+.el-table {
+  --el-table-header-bg-color: #{$bg-table-header};
+  --el-table-row-hover-bg-color: #{$bg-hover};
+  --el-table-border-color: #{$border-light};
+  --el-table-header-text-color: #{$text-secondary};
+  border-radius: $radius;
+  overflow: hidden;
+
+  th.el-table__cell {
+    background: $bg-table-header;
+    font-weight: $fw-semibold;
+    color: $text-secondary;
+  }
+
+  &::before,
+  .el-table__row {
+    border-bottom: 1px solid $border-light;
+  }
+}
+
+// 弹层柔和阴影
+.el-dialog,
+.el-drawer {
+  border-radius: $radius-lg;
+  box-shadow: $shadow-lg;
+}
+
+// 标签：主色浅底
+.el-tag {
+  border-radius: $radius-sm;
+}

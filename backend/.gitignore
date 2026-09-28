@@ -1,0 +1,5 @@
+data/
+*.exe
+*.exe~
+server.log
+server.err.log

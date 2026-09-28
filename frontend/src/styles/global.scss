@@ -1,0 +1,61 @@
+@use "tokens.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+  font-size: $fs-md;
+  line-height: $lh-base;
+  color: $text-regular;
+  background: $bg-page;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: $indigo-500;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+// 通用滚动条，克制风格
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: $indigo-200;
+  border-radius: $radius-full;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

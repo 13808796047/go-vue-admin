@@ -1,0 +1,32 @@
+[
+  {
+    "page": "01-login",
+    "url": "/login",
+    "consoleErrors": []
+  },
+  {
+    "page": "02-user",
+    "url": "/user-manage",
+    "consoleErrors": []
+  },
+  {
+    "page": "03-role",
+    "url": "/role-manage",
+    "consoleErrors": []
+  },
+  {
+    "page": "04-menu",
+    "url": "/menu-manage",
+    "consoleErrors": []
+  },
+  {
+    "page": "05-permission",
+    "url": "/permission",
+    "consoleErrors": []
+  },
+  {
+    "page": "06-profile",
+    "url": "/profile",
+    "consoleErrors": []
+  }
+]
